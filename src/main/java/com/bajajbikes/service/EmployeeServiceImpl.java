@@ -23,6 +23,7 @@ public class EmployeeServiceImpl implements EmployeeService {
 	@Override
 	public List<Employee> listEmployee() {
 		List<Employee> employees = employeeRepo.findAll();
+		System.out.println(employees);
 		return employees;
 	}
 

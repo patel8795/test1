@@ -44,7 +44,7 @@ public class EmployeeRestController {
 	@GetMapping("/emp/{id}")
 	public Employee getOneEmployee(@PathVariable("id") long id) {
 		Employee employee = employeeService.getOneEmployee(id);
-		
+		System.out.println(employee);
 		return employee;
 	}
 }
